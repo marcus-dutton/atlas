@@ -1,5 +1,5 @@
 {
-  "name": "atlas",
+  "name": "@marcus-dutton/atlas",
   "version": "1.0.0",
   "description": "Angular-style Dependency Injection for Node.js backends with TypeScript",
   "main": "dist/index.js",

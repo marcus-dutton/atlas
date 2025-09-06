@@ -1,5 +1,5 @@
 // Example: Advanced Directory-Based Auto-Discovery
-import { bootstrapApplication } from '../src';
+import { bootstrapApplication } from '@marcus-dutton/atlas';
 import { AppModule } from './app-example';
 
 const injector = bootstrapApplication(AppModule, {

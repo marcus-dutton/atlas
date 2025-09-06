@@ -1,8 +1,8 @@
 # Atlas DI
 
-[![npm version](https://badge.fury.io/js/atlas.svg)](https://badge.fury.io/js/atlas)
-[![npm downloads](https://img.shields.io/npm/dm/atlas.svg)](https://www.npmjs.com/package/atlas)
-[![npm](https://img.shields.io/npm/dt/atlas.svg)](https://www.npmjs.com/package/atlas)
+[![npm version](https://badge.fury.io/js/%40marcus-dutton%2Fatlas.svg)](https://badge.fury.io/js/@marcus-dutton/atlas)
+[![npm downloads](https://img.shields.io/npm/dm/%40marcus-dutton%2Fatlas.svg)](https://www.npmjs.com/package/@marcus-dutton/atlas)
+[![npm](https://img.shields.io/npm/dt/%40marcus-dutton%2Fatlas.svg)](https://www.npmjs.com/package/@marcus-dutton/atlas)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://opensource.org/licenses/ISC)
 
@@ -11,7 +11,7 @@ A hierarchical dependency injection system for Node.js, inspired by Angular but 
 ## Installation
 
 ```bash
-npm install atlas
+npm install @marcus-dutton/atlas
 ```
 
 ## Quick Start
@@ -179,7 +179,7 @@ See `example.ts` for comprehensive usage examples including:
 
 ## Links
 
-- 📦 **npm**: [https://www.npmjs.com/package/atlas](https://www.npmjs.com/package/atlas)
+- 📦 **npm**: [https://www.npmjs.com/package/@marcus-dutton/atlas](https://www.npmjs.com/package/@marcus-dutton/atlas)
 - 📚 **GitHub**: [https://github.com/marcus-dutton/atlas](https://github.com/marcus-dutton/atlas)
 - 📖 **Documentation**: [https://github.com/marcus-dutton/atlas#readme](https://github.com/marcus-dutton/atlas#readme)
 - 🐛 **Issues**: [https://github.com/marcus-dutton/atlas/issues](https://github.com/marcus-dutton/atlas/issues)

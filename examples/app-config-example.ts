@@ -1,5 +1,5 @@
 // Example: Angular-style Application Configuration
-import { ApplicationConfig, bootstrapApplication } from '../src';
+import { ApplicationConfig, bootstrapApplication } from '@marcus-dutton/atlas';
 import { provideMongoose, provideConfig, provideEventService } from '../src';
 import { provideSocketIoServer, SocketIoServerConfig } from '../src/core/app-config';
 

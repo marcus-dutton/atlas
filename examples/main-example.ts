@@ -1,4 +1,4 @@
-import { bootstrapApplication } from './src';
+import { bootstrapApplication } from '@marcus-dutton/atlas';
 import { AppModule } from './app-example';
 import { provideMongoose, MongooseService } from './src/services/mongoose.service';
 import { UserModel } from './developer-examples';

@@ -1,5 +1,5 @@
 // app.config.ts - Angular-style configuration
-import { ApplicationConfig } from '../src';
+import { ApplicationConfig } from '@marcus-dutton/atlas';
 import { provideMongoose, provideConfig, provideEventService } from '../src';
 import { provideSocketIoServer, SocketIoServerConfig } from '../src/core/app-config';
 

@@ -1,6 +1,6 @@
 // Example: Using Atlas with different frameworks
 
-import { bootstrapFramework, expressAdapter, fastifyAdapter } from '../src/frameworks';
+import { bootstrapFramework, expressAdapter, fastifyAdapter } from '@marcus-dutton/atlas';
 import { AppModule } from './app-example';
 
 // Bootstrap with Express
