@@ -1,6 +1,70 @@
 # Atlas DI
 
+[![npm version](https://badge.fury.io/js/atlas.svg)](https://badge.fury.io/js/atlas)
+[![npm downloads](https://img.shields.io/npm/dm/atlas.svg)](https://www.npmjs.com/package/atlas)
+[![npm](https://img.shields.io/npm/dt/atlas.svg)](https://www.npmjs.com/package/atlas)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://opensource.org/licenses/ISC)
+
 A hierarchical dependency injection system for Node.js, inspired by Angular but adapted for backend development.
+
+## Installation
+
+```bash
+npm install atlas
+```
+
+## Quick Start
+
+```typescript
+import { Injectable, bootstrapApplication } from 'atlas';
+
+@Injectable({ providedIn: 'root' })
+class MyService {
+  getMessage() {
+    return 'Hello from Atlas!';
+  }
+}
+
+@Injectable()
+class App {
+  constructor(private service: MyService) {}
+
+  run() {
+    console.log(this.service.getMessage());
+  }
+}
+
+const injector = bootstrapApplication(App);
+const app = injector.get(App);
+app.run(); // Output: Hello from Atlas!
+```
+
+## Angular-Style Configuration
+
+Atlas supports Angular-style `ApplicationConfig` with `provide*` functions:
+
+```typescript
+// app.config.ts
+import { ApplicationConfig } from 'atlas';
+import { provideMongoose, provideSocketIoServer } from 'atlas';
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    provideMongoose(),
+    provideSocketIoServer({
+      port: 3001,
+      cors: { origin: "*" }
+    })
+  ]
+};
+
+// main.ts
+import { bootstrapApplication } from 'atlas';
+import { appConfig } from './app.config';
+
+const injector = bootstrapApplication(AppModule, appConfig);
+```
 
 ## Features
 
@@ -112,3 +176,14 @@ See `example.ts` for comprehensive usage examples including:
 - Multi-providers
 - Backend decorators
 - Bootstrap patterns
+
+## Links
+
+- 📦 **npm**: [https://www.npmjs.com/package/atlas](https://www.npmjs.com/package/atlas)
+- 📚 **GitHub**: [https://github.com/marcus-dutton/atlas](https://github.com/marcus-dutton/atlas)
+- 📖 **Documentation**: [https://github.com/marcus-dutton/atlas#readme](https://github.com/marcus-dutton/atlas#readme)
+- 🐛 **Issues**: [https://github.com/marcus-dutton/atlas/issues](https://github.com/marcus-dutton/atlas/issues)
+
+## License
+
+ISC License - see [LICENSE](LICENSE) file for details.

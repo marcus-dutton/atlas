@@ -1,18 +1,43 @@
 {
   "name": "atlas",
   "version": "1.0.0",
-  "description": "",
+  "description": "Angular-style Dependency Injection for Node.js backends with TypeScript",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "example:main": "nodemon --exec ts-node examples/main-example.ts",
     "example:app": "nodemon --exec ts-node examples/app-example.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "dependency-injection",
+    "typescript",
+    "nodejs",
+    "angular",
+    "di",
+    "framework",
+    "backend",
+    "socket-io",
+    "express",
+    "fastify"
+  ],
+  "author": "Marcus Dutton",
   "license": "ISC",
   "type": "commonjs",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcus-dutton/atlas.git"
+  },
+  "homepage": "https://github.com/marcus-dutton/atlas#readme",
+  "bugs": {
+    "url": "https://github.com/marcus-dutton/atlas/issues"
+  },
   "dependencies": {
     "@types/mongoose": "^5.11.96",
     "@types/node": "^24.3.1",
