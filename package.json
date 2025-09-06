@@ -1,0 +1,27 @@
+{
+  "name": "atlas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "example:main": "nodemon --exec ts-node examples/main-example.ts",
+    "example:app": "nodemon --exec ts-node examples/app-example.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^24.3.1",
+    "mongoose": "^8.18.0",
+    "reflect-metadata": "^0.2.2",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2"
+  }
+}
